@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  >
+        <div>
+        <label for="name">name</label>
+        <input required type="text" id="name" placeholder="enter the name">
+        <br> <br>
+        <label for="pass">password</label>
+        <input readonly type="password" placeholder="enter the password" id="pass">
+        <br><br>
+        <label for="email">email</label>
+        <input  type="email" placeholder="enter the email" id="email">
+        <br><br>
+        <input type="datetime-local">
+        <br><br>
+        <input type="month">
+        <br><br>
+        <input type="file" multiple> 
+        <!-- all types of file -->
+        <br><br>
+        <input type="file" multiple  accept="video/*">
+        <br><br> 
+        <input type="color">
+        <br><br>
+        
+       </div>
+       <div>
+        <input type="radio" name="gender" id="male">
+        <label for="male">male</label>
+        
+        
+        <input type="radio" name="gender" id="female">
+        <label for="female">female</label>
+        
+       </div>
+       <div>
+        <input type="checkbox" name="gender" id="male">
+        <label for="male">male</label>
+        
+       
+        <input type="checkbox" name="gender" id="female">
+        <label for="female">female</label>
+        
+       </div>
+       <div>
+        <select name="veichel" id="">
+            <optgroup label="type1">
+            <option value="1">car</option>
+            <option value="2">bike</option>
+            <option value="3">bus</option>
+        </optgroup>
+            <optgroup label="type2">
+            <option value="1">new car</option>
+            <option value="2">new bike</option>
+            <option value="3">new bus</option>
+        </optgroup>
+        </select>
+        
+       </div>
+       <div>
+        <input type="tel" placeholder="enter the number" pattern="[9]{1}[9-1]{9}">
+       </div>
+
+
+        <input  type="submit" value="login" style="border: 100px; border-color: greenyellow; border-radius: 10%; ">
+        <input type="image" image width="50px" src="/tiger.webp">
+        
+    </form>
+    
+</body>
+</html>
