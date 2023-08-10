@@ -4,25 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <h1>Hello word</h1>
-    <div>
-        <p class="lead text-decoration-underline">hello word</p>
-    </div>
-    <div>
-        <ul class="lead text-start fw-bold fst-italic text-primary bg-warning" >
-            <li>hello word this is starting</li>
-            <li>hello word this is two</li>
-            <li>hello word this is three</li>
-            <li>hello word this is fourth</li>
-            <li>hello word this is five</li>
-            <li>hello word this is end</li>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <a class="navbar-brand" href="https://www.google.com"><i class="bi ps-2 fs-2 text-warning bi-person-circle"></i></a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-decoration-none btn btn-warning fw-bold text-light px-2"
+                    href="#"> Home</a></li>
+            <li class="nav-item"><a class="nav-link text-decoration-none btn btn-warning fw-bold text-light px-2"
+                    href="#"> Skills</a></li>
+            <li class="nav-item"><a class=" nav-link text-decoration-none btn btn-success fw-bold text-light px-2"
+                    href="#"> Education </a></li>
+            <li class=" dropdown nav-item"><a
+                    class=" dropdown-toggle nav-link text-decoration-none btn btn-warning fw-bold text-light px-2"
+                    data-bs-toggle="dropdown" href="#"> Projects</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Html</a>
+                    <a class="dropdown-item" href="#">Index</a>
+                    <a class="dropdown-item" href="#">Bootstrap</a>
+
+                </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link text-decoration-none btn btn-warning fw-bold text-light px-2"
+                    href="#"> contact me</a></li>
+
+
         </ul>
+        <form >
+            <div class="input-group align-self-end">
+                <input type="text" placeholder="search" class="form-control">
+                <button type="button" class="btn btn-warning"><i class="bi bi-search"></i></button>
+            </div>
+        </form>
+    </nav>
 
     </div>
 </body>
