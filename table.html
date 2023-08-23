@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        .html{
+    
+        }
+        .table,th,td{
+       border: 2px ;
+       
+       border-style: solid;
+       padding: 10px;
+      }
+      
+      
+        table.center{
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            border-collapse:collapse  ;
+            text-align: center;
+         }
+         td:hover{
+            
+            background-color: red;
+            transition: 2s;
+            /* transform: rotate(10deg) rotatex(90deg) ; */
+
+           border: 2px solid black;
+            color: blue;
+           
+         }
+         table:hover{
+            background-color: greenyellow;
+            transform: rotatex(30deg);
+            transition: 5s;
+           
+         
+         }
+         caption:hover{
+            transition: 2s;
+            transform: rotate(360deg);
+         }
+    
+    </style>
+</head>
+
+
+<body><div >
+      <table class="center">
+<caption>MY NAME</caption>
+      <tr>
+        <th >Name</th>
+        <td>naveen</td>
+        <td>choudhary</td>
+        
+      </tr>
+      <tr >
+        <th rowspan="2">Class</th>
+        <td>class 1</td>
+        <td>class 4</td>
+        
+      </tr>
+      <tr>
+        
+        <td>class 2</td>
+        <td>class 4</td>
+      </tr>
+    </div></table>
+
+</body>
+
+</html>
