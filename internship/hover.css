@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50vh;
+}
+span{
+    cursor:default;
+    position: relative;
+    border: 1px solid black ;
+     padding: 0.5rem;
+     border-radius: 8px;
+     background-color: darkcyan;
+     color: aliceblue;
+     max-width: 300px;
+
+}
+span:hover{
+        background-color: aquamarine;
+        color: black;
+
+}
+span:hover::before{
+        position:absolute;
+        content: attr(data-tittle);
+        background-color: black;
+        border-radius: 4px;
+        text-align: center;
+        color: brown;
+        top: -35px;
+        right:50% ;
+        padding: 3px 8px;
+        transform: translate(50%,-50%);
+        white-space:nowrap;
+        overflow: break-word;
+        padding: 20px;
+}
+
+span:hover::after{
+    position:absolute;
+    content: '\25bc';   
+    height: 1.25rem;
+    color: black;
+    top: -10px;
+    left: 50%;
+    
+    translate: (-33%, -50%);
+    transition: 2s;
+   
+}
