@@ -1,0 +1,15 @@
+.form{
+    display: flex;
+    justify-content: center;
+    
+  
+}
+.form input{
+    background-color: transparent;
+    /* border-radius: 5px; */
+   border: solid 2px transparent ;
+   padding:0.5rem;
+   border-bottom: 2px dotted black;
+   
+
+}
