@@ -3,7 +3,7 @@ size=int(input("enter the size of array\n"))
 
 print("enter the number of array")
 for i in range( size):
-    y=int(input(""))
+    y=int(input(" ss"))
     x.append(y)
 print("the number of array are",x)
 def sorting():
