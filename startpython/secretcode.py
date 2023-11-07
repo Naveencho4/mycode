@@ -1,34 +1,29 @@
 import random
 import string
+code=str(input("enter the message\n"))
+lenght=(len(code))
+message=code
+print("\nencrepeted")
+   
+if(lenght<3):
+    message=message[::-1]
+    print(message)
+else:
+    codending=''.join(random.choices(string.ascii_uppercase+string.ascii_lowercase,k=3))
+    codestart=''.join(random.choices(string.ascii_uppercase+string.ascii_lowercase,k=3))
+    startingword=message[0]
+    remaning_message=message[1:]
+    print(codestart+remaning_message+startingword+codending)
 
-message=str(input("enter the message\n"))
+print("\ndecrepeted")
 
-def encrepeted():
-    print("\nencrepeted")
-    lenght=(len(message))
-    if(lenght<3):
-        message=message[::-1]
-        print(message)
-    else:
-        codending=''.join(random.choices(string.ascii_uppercase+string.ascii_lowercase,k=3))
-        codestart=''.join(random.choices(string.ascii_uppercase+string.ascii_lowercase,k=3))
-        startingword=message[0]
-        trying2=message.replace(message[0],"")
-        message=trying2+startingword
-    
-        print(codestart+message+codending)
-def decrepeted():
-    print("\ndecrepeted")
-    lenght=(len(message))
-    if(lenght<3):
-        message=message[::-1]
-        print(message)
-    else:
-        message = ''.join(message[3:-3]) 
-        print(message)
-        startingword=message[-1]
-        trying2=message.replace(message[-1],"")
-        message=startingword+trying2
-        print(message)
-decrepeted()
+if(lenght<3):
+    message=message[::-1]
+    print(message)
+else:
+    message =(message[3:-3]) 
+    startingword=message[::-1]
+    remaning_message=message[::-1]
+    message=startingword+ remaning_message
+    print(code)
 
